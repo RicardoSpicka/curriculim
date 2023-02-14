@@ -1,0 +1,75 @@
+body{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#header {
+    background-color: rgb(223, 189, 146);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Hubballi', cursive;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+p{
+    text-align: justify;
+    text-indent: 2em;
+}
+
+#nameAndTitle h1, h2{
+    margin: 0;
+}
+
+#nameAndTitle{
+    background-color: #ffffff;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact, #links{
+    list-style: none;
+}
+
+#contact i{
+    width: 30px;
+    color: rgb(223, 189, 146);
+}
+
+#stars i{
+    color: rgb(223, 189, 146);
+}
+
+#links i{
+    width: 30px;
+    color: rgb(223, 189, 146);
+}
+
+#conteiner {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-column-gap: 20px;
+}
+
+#sideBar, #content {
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+}
+
+.card {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #b9b8b8ee;
+    border-radius: 15px;
+    padding: 20px;
+    font-weight: 200;
+}
+
+.card h3{
+    font-family: 'Hubballi', cursive;
+    font-size: 20px;
+}
+
