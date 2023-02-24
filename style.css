@@ -4,10 +4,19 @@ body{
 }
 
 #header {
-    background-color: rgb(223, 189, 146);
+    display: flex;
+    flex-direction: row;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(223, 189, 146) 30%, rgb(223, 189, 146) 70%, rgba(255,255,255,1) 100%);    
+    background-repeat: no-repeat;
     margin-top: 50px;
     margin-bottom: 50px;
     font-family: 'Hubballi', cursive;
+}
+
+#foto{
+    margin-left: 20px;
+    width: 150px;
 }
 
 h1, h2, h3 {
@@ -17,10 +26,7 @@ h1, h2, h3 {
 p{
     text-align: justify;
     text-indent: 2em;
-}
-
-#nameAndTitle h1, h2{
-    margin: 0;
+    padding: 4px 0px;
 }
 
 #nameAndTitle{
@@ -30,22 +36,36 @@ p{
     text-align: center;
 }
 
+#nameAndTitle h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#nameAndTitle h2{
+    margin: 0;
+}
+
 #contact, #links{
     list-style: none;
+    margin-left: 30px;
 }
 
 #contact i{
     width: 30px;
     color: rgb(223, 189, 146);
+    padding: 4px 0px;
+
 }
 
 #stars i{
     color: rgb(223, 189, 146);
+    padding: 4px 0px;
 }
 
 #links i{
     width: 30px;
     color: rgb(223, 189, 146);
+    padding: 4px 0px;
 }
 
 #conteiner {
@@ -58,6 +78,15 @@ p{
     display: flex;
     row-gap: 20px;
     flex-direction: column;
+}
+
+#soft{
+    display: flex;
+    flex-direction: row;
+}
+
+#soft i{
+    padding: 4px 0px;
 }
 
 .card {
@@ -73,3 +102,123 @@ p{
     font-size: 20px;
 }
 
+#tabela th{
+    font-weight: 600;
+    border: 1px solid rgb(223, 189, 146);
+    padding: 0px 10px 0px 10px;
+}
+
+#tabela td{
+    padding: 2px 30px 2px 30px;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(223, 189, 146);
+    font-family: 'Hubballi', cursive;
+    font-size: 10px;
+    padding: 2px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        width: 97%;
+        margin-left: 5px;
+    }
+    
+    #header {
+        display: flex;
+        flex-direction: row;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(223, 189, 146) 30%, rgb(223, 189, 146) 70%, rgba(255,255,255,1) 100%);    
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #foto{
+        align-items: center;
+        width: 70px;
+    }
+    
+    h1, h2, h3 {
+        text-transform: uppercase;
+    }
+    
+    p{
+        text-align: justify;
+        text-indent: 2em;
+        padding: 4px 0px;
+    }
+    
+    #nameAndTitle{
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(223, 189, 146) 30%, rgb(223, 189, 146) 70%, rgba(255,255,255,1) 100%);    
+        background-repeat: no-repeat;
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #nameAndTitle h1{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    #nameAndTitle h2{
+        font-size: 14px;
+        margin-bottom: 5px;
+    } 
+
+    #conteiner {
+        display: flex;
+        flex-direction: column;
+        grid-column-gap: 10px;
+    }
+
+    #sideBar, #content {
+        row-gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid #b9b8b8ee;
+        border-radius: 10px;
+        padding: 10px;
+        font-weight: 200;
+    }
+
+    .card h3{
+        margin: 0px;
+        font-size: 16px;
+    }
+
+    .card ul li{
+        font-size: 12px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    #tabela {
+        margin-top: 10px;
+    }
+
+    #tabela td{
+        font-size: 10px;
+        border: 1px solid #b9b8b8ee;
+        padding: 0px;
+    }
+
+    footer{
+        font-size: 5px;
+        margin-bottom: 50px;
+    }
+
+
+}
